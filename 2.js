@@ -14,12 +14,10 @@ function returnArg (x){
     return typeof x
 }
 console.log(returnArg(true));
-
 function returnBool (a){
     return a % 2 === 0;
 }
 console.log(returnBool(3));
-
 function returnType (b){
     if (returnArg(b) === 'string'){
         console.log(b)
@@ -27,12 +25,16 @@ function returnType (b){
         console.log (returnBool(b));
     }
 }
-function evenNumber(q){
+function evenNumberone(q){
     if (q % 2 === 0){
         console.log(q * 2 )
     }else {
         console.log(q * 3 )
     }
+}
+function evenNumbertwo(q){
+    let a =  (q % 2 === 0 ? (q * 2 ) : (q * 3));
+    console.log(a)
 }
 function twoArg (x, y){
     if (x % 2 === 0 && y % 2 === 0) {
@@ -46,6 +48,6 @@ function twoArg (x, y){
     }
 }
 returnType(34);
-evenNumber(4);
+evenNumberone(4);
+evenNumbertwo (5)
 twoArg(3, 2)
-
