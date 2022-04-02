@@ -22,13 +22,8 @@ function returnType (b){
     if (returnArg(b) === 'string'){
         console.log(b)
     }else if (returnArg(b) === 'number') {
-        if (b % 2 === 0) {
-            console.log('Четное')
-        }else {
-            console.log('Нечетное')
-        }
-     
-        }
+       b % 2 === 0 ? console.log('Четное') : console.log('Нечетное')
+    }
 }
 function evenNumberone(q){
     if (q % 2 === 0){
