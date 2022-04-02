@@ -82,7 +82,7 @@ function taskFouroptionone(n,m) {
     while (i < n) {
         i++;
         let c = i * m;
-        if (c % 2 === 1) {
+        if (c % 2!== 0) {
             console.log(i)
             console.log(c)
         }
@@ -92,7 +92,7 @@ function taskFouroptiontwo(n, m){
     for (let i = 1;i < n;i++){
         console.log(i)
         let c = i * m;
-        if(c % 2 === 1){
+        if(c % 2!== 0){
             console.log(c)
         }
     }
@@ -101,7 +101,7 @@ function taskFouroptionthree(n, m){
     let i = 1;
     do {
         let c = i * m;
-        if(c % 2 === 1) {
+        if(c % 2 !== 0) {
             console.log(c);
         }
         console.log(i)
